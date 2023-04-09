@@ -7,6 +7,22 @@
     --brand-color-cloud: #F4F4FD;
 }
 
+/* All margin reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+.container {
+    width: 1440px;
+}
+
 body {
     font-family: Roboto, sans-serif;
     color: var(--brand-color-text);
@@ -34,7 +50,25 @@ body {
 
 
 /* Header */
-.header {}
+.header {
+    display: flex;
+}
+
+.navigate,
+.contacts-list {
+    display: flex;
+
+    margin: 24px 0;
+
+}
+
+.nav-link {
+    display: flex;
+    margin-left: 77px;
+    padding: 0;
+    gap: 40px;
+
+}
 
 /* logo */
 .logo {
@@ -47,6 +81,8 @@ body {
 
     letter-spacing: 0.03em;
     color: var(--brand-color-iris);
+
+    padding-left: 156px;
 
 }
 
@@ -83,6 +119,12 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color-text);
+}
+
+.contacts-list {
+    margin-left: 331px;
+    padding: 0;
+    gap: 40px;
 }
 
 .contacts-list .contacts:hover,
