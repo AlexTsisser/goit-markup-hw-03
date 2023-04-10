@@ -8,6 +8,16 @@
     --brand-color-borderbutton: #e7e9fc;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 /* All margin reset */
 h1,
 h2,
@@ -36,8 +46,6 @@ body {
     font-size: 16px;
 
 }
-
-.body-portfolio {}
 
 .link {
     text-decoration: none;
@@ -102,9 +110,11 @@ body {
     display: flex;
     gap: 40px;
 
+
 }
 
 .link-studio {
+    display: block;
     padding: 24px 0;
 }
 
@@ -165,6 +175,7 @@ body {
 
 /* Effective Solutions for Your Business */
 .title {
+    margin: 0 auto;
     letter-spacing: 0.02em;
     font-weight: 700;
     font-size: 56px;
@@ -262,6 +273,7 @@ body {
 
 .img-box {
     flex-basis: calc((100% - 3 * 16px) / 3);
+    flex-basis: calc((100%-3*16)/3);
 
 }
 
