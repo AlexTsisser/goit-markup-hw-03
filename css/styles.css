@@ -160,7 +160,7 @@ body {
 
 .section-hero {
     background: var(--brand-color-navyblue);
-
+    padding: 188px 0;
 }
 
 /* Effective Solutions for Your Business */
@@ -171,14 +171,20 @@ body {
     line-height: 1.07;
     text-align: center;
     color: var(--brand-color-white);
+
+    max-width: 496px;
 }
 
 .title-button {
-
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 
     font-family: Roboto, sans-serif;
     background: var(--brand-color-iris);
-    ;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -200,10 +206,22 @@ body {
     border-radius: 4px;
 }
 
+/* section-1 */
+.section-first {
+    padding: 120px 0;
+}
 
+.sectionfirst-list {
+    display: flex;
+    gap: 24px;
+}
+
+.box {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
 
 .title-first {
-
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -218,11 +236,15 @@ body {
     color: var(--brand-color-text);
 }
 
+/* Section 2 */
+
 .section-second {
     list-style: none;
+    padding-bottom: 120px;
 }
 
 .sectionsecond-title {
+    margin-bottom: 72px;
     font-size: 36px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -234,6 +256,9 @@ body {
 
 .img-list {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% - 3 * 16px) / 3);
 
 }
 
